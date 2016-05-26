@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>REST app-form</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="rest.js"></script>
+    <style>
+      body
+      {
+       margin: 5em;
+      }
+      table, th ,td
+      {
+        margin: 2em;
+        padding: 1em;
+        border: 1px solid black;
+        border-collapse: collapse;
+      
+      }
+      form
+      {
+        margin: 2em;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+      
+     
+    <div id="table">
+      <h2>Here is your table.</h2>
+      
+        <table id="table1">
+
+          <thead>
+
+              <tr>
+                <th id="id1">MOVIE</th>
+                <th>YEAR</th>
+                <th>DIRECTOR</th>
+                <th>More Options</th>
+              </tr>
+
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+     
+        <button type="submit" value="button" id="button1">Click to update the current list</button>    
+       
+    </div>
+    
+    <div id="form">
+      <h2>Please enter the following fields.</h2>
+      <form>
+          <label>Movie Name</label>
+          <input type="text" id="movieName"><br>
+          <label>Year Released</label>
+          <input type="number" id="year"><br>
+         <label>Director's Name</label>
+          <input type="text" id="dir"><br>
+         
+         <button type="submit" value="button" id="submitButton">Submit</button>
+         <button type="submit" value="button" id="cancelButton" onclick="resetForm()">Cancel</button>
+      </form>
+     </div>
+    
+    
